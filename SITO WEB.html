@@ -1,0 +1,642 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title> Jersey Planet</title>
+        <link rel="icon" type="image/png" href="Immagini/Logo/Logo Sito Web.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <div class="header">
+                <img src="Immagini/Logo/Bianco su sfondo nero jersey.jpg">
+                <p> Qui tutte le maglie da calcio che ami, in un solo posto.</p>
+            </div>
+
+           
+            <div class="topnav" id="myTopnav">
+                <a href="#">Campionati Europei</a>
+                <a href="#">Nuovi Arrivi</a>
+                <a href="#">History</a>
+                <a href="#" class="right">Login</a> 
+                <a href="#" id="cart-button">
+                    🛒 Carrello (<span id="cart-count"> 0 </span>)   
+                </a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                   ☰
+                </a>
+                 
+            </div>
+
+            <div class="cart">
+                <h2> 🛒 Carrello </h2>
+                <ul id="cart-items"></ul>
+                <p class="totale">
+                    Totale: € <span id="cart-total"> 0 </span></p>
+                </p>
+            </div>
+
+            <div class="prodotti">
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Real.jpg">
+                    <h3> Maglia Real Madrid 2025/26 </h3>
+                    <p>  € 119,99</p>
+                    <form>
+                    <label for="size"> Taglia:</label>
+                    <select name="size">
+                        <option value="XS"> XS </option>
+                        <option value="S"> S </option>
+                        <option value="M"> M </option>
+                        <option value="L"> L </option>
+                        <option value="XL"> XL </option>
+                        <option value="2XL"> 2XL </option>
+                    </select>
+                    <br> <br>
+
+                    <label>
+                        <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+ €20,00)
+                        </label>
+                    <br>
+                    <input type="number" placeholder="Numero" min="1" max="99">
+                    <input type="nome" placeholder="Nome">
+                     <br> <br>   
+                    
+                    <label>
+                        <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                    </label>
+                    <br> <br>
+                    <label> Seleziona Patch: </label>
+                    <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="La Liga"> La Liga</option>
+                        <option value="Champions League"> Champions League</option>
+                    </select>
+                    <br> <br>
+                    <button type="button"
+                     onclick="addToCart('Maglia Real Madrid 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                            
+                </form>
+                </div>
+                   
+
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Barca.jpg">
+                    <h3> Maglia Barcellona 2025/26</h3>
+                    <p> € 119,99 </p>
+                    <form>
+                    <label for="size"> Taglia:</label>
+                    <select name="size">
+                        <option value="XS"> XS </option>
+                        <option value="S"> S </option>
+                        <option value="M"> M </option>
+                        <option value="L"> L </option>
+                        <option value="XL"> XL </option>
+                        <option value="2XL">2XL</option>
+                    </select>
+                    <br> <br>
+                    <label>
+                        <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+ €20,00)
+                        
+                    </label>
+                    <br> 
+                    <input type="number" placeholder="Numero" min="1" max="99">
+                    <input type="nome" placeholder="Nome">
+                    
+                    <br> <br>
+                    <label>
+                        <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                        
+                    </label>
+                    <br> <br>
+                    <label> Seleziona Patch: </label>
+                    <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="La Liga"> La Liga</option>
+                        <option value="Champions League"> Champions League</option>
+                    </select>
+                    <br> <br>
+                    <button type="button" onclick="addToCart('Maglia Barcellona 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                </form>
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Inter.jpg">
+                    <h3> Maglia Inter 2025/26</h3>
+                    <p> € 119,99 </p>
+                    <form>
+                    <label for="size"> Taglia:</label>
+                    <select name="size">
+                        <option value="XS"> XS </option>
+                        <option value="S"> S </option>
+                        <option value="M"> M </option>
+                        <option value="L"> L </option>
+                        <option value="XL"> XL </option>
+                        <option value="2XL"> 2XL</option>
+                    </select>
+                    <br> <br>
+                    <label>
+                        <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+ €20,00)
+                        
+                    </label>
+                    <br> 
+                    <input type="number" placeholder="Numero" min="1" max="99">
+                    <input type="nome" placeholder="Nome">
+                    
+                    <br> <br>
+                    <label>
+                        <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                    </label>
+                    <br> <br>
+                    <label> Seleziona Patch: </label>
+                    <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Serie A"> Serie A </option>
+                        <option value="Champions League"> Champions League</option>
+                    </select>
+                    <br> <br>
+                    <button type="button" onclick="addToCart('Maglia Inter 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                </form>
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Milan.jpg">
+                    <h3> Maglia Milan 2025/26</h3>
+                    <p> € 119,99</p>
+                    <form>
+                    <label for="size"> Taglia:</label>
+                    <select name="size">
+                        <option value="XS"> XS </option>
+                        <option value="S"> S </option>
+                        <option value="M"> M </option>
+                        <option value="L"> L </option>
+                        <option value="XL"> XL </option>
+                        <option value="2XL"> 2XL</option>
+                    </select>
+                    <br> <br>
+                    <label>
+                        <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+ €20,00)
+                    </label>
+                    <br> 
+                    <input type="number" placeholder="Numero" min="1" max="99">
+                    <input type="nome" placeholder="Nome">
+                    
+                    <br> <br>
+                    <label>
+                        <input type="checkbox" name="patch">
+                            Aggiungi Patch (+ € 15,00)
+                    </label>
+                    <br> <br>
+                    <label> Seleziona Patch: </label>
+                    <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Serie A"> Serie A</option>
+                    </select>
+                    <br> <br>
+                    <button type="button" onclick="addtoCart('Maglia Milan 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                </form>
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Juve.jpg">
+                    <h3> Maglia Juventus 2025/26 </h3>
+                    <p> € 119,99 </p>
+                    <form>
+                        <label for="size"> Taglia:</label>
+                        <select name="size">
+                            <option value="XS"> XS</option>
+                            <option value="S"> S</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XL"> XL</option>
+                            <option value="2XL"> 2XL</option>
+                        </select>
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+€20,00)
+                            
+                        </label>
+                        <br>
+                        <input type="number" placeholder="Numero" min="1" max="99">
+                        <input type="nome" placeholder="Nome">
+                        
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                        </label>
+                        <br> <br>
+                    <label> Seleziona Patch: </label>
+                    <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Serie a"> Serie A</option>
+                        <option value="Champions League"> Champions League</option>
+                    </select>
+                        <br> <br>
+                        <button type="button" onclick="addToCart('Maglia Juventus 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                    </form>
+                    
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Arsenal.jpg">
+                    <h3> Maglia Arsenal 2025/26 </h3>
+                    <p> € 119,99 </p>
+                    <form>
+                        <label for="size"> Taglia:</label>
+                        <select name="size">
+                            <option value="XS"> XS</option>
+                            <option value="S"> S</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XL"> XL</option>
+                            <option value="2XL"> 2XL</option>
+                        </select>
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+€20,00)
+                            
+                        </label>
+                        <br>
+                        <input type="number" placeholder="Numero" min="1" max="99">
+                        <input type="nome" placeholder="Nome">
+                        
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                        </label>
+                        <br> <br>
+                    <label> Seleziona Patch: </label>
+                    <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Premier League"> Premier League</option>
+                        <option value="Champions League"> Champions League</option>
+                    </select>
+                        <br> <br>
+                        <button type="button" onclick="addToCart('Maglia Arsenal 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                    </form>
+                    
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Liverpool.jpg">
+                    <h3> Maglia Liverpool 2025/26 </h3>
+                    <p> € 119,99 </p>
+                    <form>
+                        <label for="size"> Taglia: </label>
+                        <select name="size">
+                            <option value="XS"> XS</option>
+                            <option value="S"> S</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XL"> XL </option>
+                            <option value="2XL"> 2XL</option>
+                        </select>
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+€20,00)
+                            
+                        </label>
+                        <br>
+                        <input type="number" placeholder="Numero" min="1" max="99"> 
+                        <input type="nome" placeholder="Nome">  
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€15,00)
+                        </label>
+                        <br> 
+                        <label> Seleziona Patch: </label>
+                        <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Premier League"> Premier League</option>
+                        <option value="Champions League"> Champions League</option>
+                        </select>
+                        <br> <br> 
+                        <button type="button" onclick="addToCart('Maglia Liverpool 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                    </form>
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia PSG.jpg">
+                    <h3> Maglia PSG 2025/26 </h3>
+                    <p> € 119,99 </p>
+                    <form>
+                        <label for="size"> Taglia: </label>
+                        <select name="size">
+                            <option value="XS"> XS</option>
+                            <option value="S"> S</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XL"> XL </option>
+                            <option value="2XL"> 2XL</option>
+                        </select>
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+€20,00)
+                            
+                        </label>
+                        <br>
+                        <input type="number" placeholder="Numero" min="1" max="99"> 
+                        <input type="nome" placeholder="Nome">  
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                        </label>
+                        <br> 
+                        <label> Seleziona Patch: </label>
+                        <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Ligue 1"> Ligue 1</option>
+                        <option value="Champions League"> Champions League</option>
+                        </select>
+                        <br> <br> 
+                        <button type="button" onclick="addToCart('Maglia PSG 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                    </form>
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia City.jpg">
+                    <h3> Maglia Manchester City 2025/26 </h3>
+                    <p> € 119,99 </p>
+                    <form>
+                        <label for="size"> Taglia: </label>
+                        <select name="size">
+                            <option value="XS"> XS</option>
+                            <option value="S"> S</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XL"> XL </option>
+                            <option value="2XL"> 2XL</option>
+                        </select>
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+€20,00)
+                            
+                        </label>
+                        <br>
+                        <input type="number" placeholder="Numero" min="1" max="99"> 
+                        <input type="nome" placeholder="Nome">  
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                        </label>
+                        <br> 
+                        <label> Seleziona Patch: </label>
+                        <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Ligue 1"> Premier League</option>
+                        <option value="Champions League"> Champions League</option>
+                        </select>
+                        <br> <br> 
+                        <button type="button" onclick="addToCart('Maglia Manchester City 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                    </form>
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Bayern.jpg">
+                    <h3> Maglia Bayern Monaco 2025/26 </h3>
+                    <p> € 119,99 </p>
+                    <form>
+                        <label for="size"> Taglia: </label>
+                        <select name="size">
+                            <option value="XS"> XS</option>
+                            <option value="S"> S</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XL"> XL </option>
+                            <option value="2XL"> 2XL</option>
+                        </select>
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+€20,00)
+                            
+                        </label>
+                        <br>
+                        <input type="number" placeholder="Numero" min="1" max="99"> 
+                        <input type="nome" placeholder="Nome">  
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                        </label>
+                        <br> 
+                        <label> Seleziona Patch: </label>
+                        <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Bundesliga"> Bundesliga</option>
+                        <option value="Champions League"> Champions League</option>
+                        </select>
+                        <br> <br> 
+                        <button type="button" onclick="addToCart('Maglia Bayern Monaco 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                    </form>
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Chelsea.jpg">
+                    <h3> Maglia Chelsea 2025/26 </h3>
+                    <p> € 119,99 </p>
+                    <form>
+                        <label for="size"> Taglia: </label>
+                        <select name="size">
+                            <option value="XS"> XS</option>
+                            <option value="S"> S</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XL"> XL </option>
+                            <option value="2XL"> 2XL</option>
+                        </select>
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+€20,00)
+                            
+                        </label>
+                        <br>
+                        <input type="number" placeholder="Numero" min="1" max="99"> 
+                        <input type="nome" placeholder="Nome">  
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                        </label>
+                        <br> 
+                        <label> Seleziona Patch: </label>
+                        <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="Premier League"> Premier League</option>
+                        <option value="Champions League"> Champions League</option>
+                        </select>
+                        <br> <br> 
+                        <button type="button" onclick="addToCart('Maglia Chelsea 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                    </form>
+                </div>
+                <div class="squadra">
+                    <img src="Immagini/Maglie/Maglia Atletico.jpg">
+                    <h3> Maglia Atletico Madrid 2025/26 </h3>
+                    <p> € 119,99 </p>
+                    <form>
+                        <label for="size"> Taglia: </label>
+                        <select name="size">
+                            <option value="XS"> XS</option>
+                            <option value="S"> S</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XL"> XL </option>
+                            <option value="2XL"> 2XL</option>
+                        </select>
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="personalizzazione">
+                            Aggiungi personalizzazione (+€20,00)
+                            
+                        </label>
+                        <br>
+                        <input type="number" placeholder="Numero" min="1" max="99"> 
+                        <input type="nome" placeholder="Nome">  
+                        <br> <br>
+                        <label>
+                            <input type="checkbox" name="patch">
+                            Aggiungi Patch (+€ 15,00)
+                        </label>
+                        <br> 
+                        <label> Seleziona Patch: </label>
+                        <select name="patchType">
+                        <option value=""> Nessuna Patch</option>
+                        <option value="La Liga"> La Liga</option>
+                        <option value="Champions League"> Champions League</option>
+                        </select>
+                        <br> <br> 
+                        <button type="button" onclick="addToCart('Maglia Atletico Madrid 2025/26',119.99)" >
+                        Acquista
+                    </button>
+                    </form>
+                </div>
+
+                
+
+            </div>
+            
+            <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("myTopnav");
+                    if (menu.className === "topnav"){
+                        menu.className = "topnav responsive";
+                    } else {
+                        menu.className = "topnav";
+                    }
+                }
+            </script>
+            <script>
+
+                let cart=[];
+                let total = 0;
+
+                function addToCart(nome,prezzo) {
+                    cart.push({
+                        nome:nome,
+                        prezzo:prezzo
+                    });
+
+                    total +=prezzo;
+                    updateCart();
+                }
+
+                function updateCart() {
+
+                    let cartItems = document.getElementById("cart-items");
+                    cartItems.innerHTML = "";
+                    cart.forEach (function(prodotto) {
+
+                        let li= document.createElement("li");
+                        li.textContent = prodotto.nome + " €" + prodotto.prezzo;
+                        cartItems.appendChild(li);
+                });
+
+                document.getElementById("cart-total").textContent = total.toFixed(2);
+                document.getElementById("cart-count").textContent = cart.length;
+
+                }
+
+            
+
+
+
+            </script>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Ti serve aiuto? </h3> 
+                        <a href="#"> Assistenza clienti</a>
+                        <a href="#"> Cambi e resi</a>
+                        <a href="#"> Guida alle taglie</a>
+                        <a href="#"> Segui il tuo ordine</a>
+                    </div>
+                    <div class="footer-section">
+                        <h3> Informazioni </h3>
+                        <a href="#"> Privacy Policy</a>
+                        <a href="#"> Termini e Condizioni </a>
+                        <a href="#"> Spedizioni </a>
+                    </div>
+                    <div class="footer-section">
+                        <h3> Contatti </h3>
+                        <p> Email: info@jerseyplanet.com</p>
+                        <p> Instagram: @jerseyplanet</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    © 2026 Jersey Planet - Tutti i diritti riservati
+                </div>
+            </footer>
+
+
+                 
+
+
+    
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

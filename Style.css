@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.header {
+  padding: 20px 20px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.header p {
+  color: #ccc;
+}
+
+.header img {
+  width: 217.5px;
+  height: 107.5px;
+  float: center;
+  margin-right: 20px;
+} 
+
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color: #1e38cc;
+  padding: 0 20px;
+  position: relative;
+  min-height: 60px;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  display:block;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .right {
+  margin-left: auto;
+}
+.topnav .icon {
+  display:none;
+}
+
+
+.prodotti {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.squadra {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.squadra img {
+  width: 50%;
+  height: 300px;
+  object-fit:contain;
+}
+
+.squadra h3 {
+  font-size: 16px;
+}
+
+.squadra p {
+  font-weight: bold;
+  color: #1a7f37;
+}
+
+
+.squadra button {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.squadra button:hover {
+  background: #00cc66;
+}
+
+.squadra form {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.squadra select,
+.squadra input[type="text"],
+.squadra input[type="number"],
+.squadra input[type="nome"] {
+  width: 50%;
+  padding: 6px;
+  margin-top: 5px;
+}
+
+.squadra label {
+  font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .topnav {
+    display: block;
+    padding:0;
+  }
+
+  .topnav .icon {
+    display: block;
+    position:absolute;
+    right: 15px;
+    top: 4px;
+    z-index: 1000;
+    font-size: 30px;
+    border: none;
+    background: none;
+  }
+
+  .topnav a {
+    display: none;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .topnav a.icon {
+    display: block;
+    width: auto;
+    border: none;
+    padding:8px 12px;
+    text-align: right;
+    font-size: 30px;
+    background-color: #1e38cc;
+    line-height: 1;
+  }
+
+  .topnav.responsive a:not(.icon) {
+    display: block;
+    text-align: left;
+    background-color: #1e38cc;
+  }
+
+  .topnav.responsive .icon {
+    text-align: right;
+  }
+
+  .prodotti {
+    grid-template-columns: 1fr;
+  }
+
+  .squadra img {
+    width: 80%;
+    height: auto;
+  }
+
+  .squadra select,
+  .squadra input[type="text"],
+  .squadra input[type="number"],
+  .squadra input[type="nome"] {
+    width: 100%;
+  }
+}
+
+.cart {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.cart h2 {
+  margin-top:0;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.totale {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #1a7f37;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 40px 20px;
+}
+  
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:30px;
+} 
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top:20px;
+  color:#aaa;
+}
